@@ -6,7 +6,7 @@ SRCS	:=	$(shell find . -name "*.go" -type f ! -name "*_test.go")
 
 all: $(BIN) test
 
-$(BIN): fmt $(SRCS)
+$(BIN): $(SRCS)
 	$(GO) build -o $(BIN)
 
 
@@ -14,7 +14,7 @@ $(BIN): fmt $(SRCS)
 
 
 run: $(BIN)
-	$(BIN) -p 80
+	./$(BIN)
 
 fmt:
 	$(GOFMT) .

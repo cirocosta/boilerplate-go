@@ -1,0 +1,5 @@
+package: .
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/gorilla/handlers
+  version: v1.1
