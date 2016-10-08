@@ -2,6 +2,7 @@
   "id": "boilerplate-go",
   "type": "cirocosta/go",
   "hooks": {
+    "before_build": "make glide",
     "build": "make"
   }
 }

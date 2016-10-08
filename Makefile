@@ -10,11 +10,16 @@ $(BIN): $(SRCS)
 	$(GO) build -o $(BIN)
 
 
-.PHONY: test clean fmt run
+.PHONY: test clean fmt run glide
 
 
 run: $(BIN)
 	./$(BIN)
+
+
+glide:
+	curl https://glide.sh/get | sh
+	glide install
 
 fmt:
 	$(GOFMT) .
