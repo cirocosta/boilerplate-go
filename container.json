@@ -1,0 +1,7 @@
+{
+  "id": "boilerplate-go",
+  "type": "cirocosta/go",
+  "hooks": {
+    "build": "make build"
+  }
+}
